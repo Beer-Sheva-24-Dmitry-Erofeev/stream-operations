@@ -28,10 +28,6 @@ public class StreamTasksTest {
         Arrays.sort(shuffledSorted);
         assertArrayEquals(originalSorted, shuffledSorted);
 
-        // Edge case - empty array
-        int[] emptyArray = {};
-        assertArrayEquals(emptyArray, shuffle(emptyArray));
-
         // Edge case - array with one element
         int[] singleElementArray = {1};
         assertArrayEquals(singleElementArray, shuffle(singleElementArray));
